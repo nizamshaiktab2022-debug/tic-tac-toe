@@ -2,9 +2,9 @@ FROM node
 
 WORKDIR /myapp
 
-COPY package.json .
+COPY package.json /myapp
 
-COPY package-lock.json .
+COPY package-lock.json /myapp
 
 RUN npm install
 
